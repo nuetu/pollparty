@@ -1,2 +1,0 @@
-# pollparty
-ethan diamond mothman

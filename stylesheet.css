@@ -1,0 +1,152 @@
+body {
+    display: block;
+    margin: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+	background-color: #E9EBEE;
+	font-family: Arial;
+}
+nav {
+    list-style-type: none;
+    overflow: auto;
+	border-bottom-left-radius: 10px;
+	position: fixed;
+	width: 100%;
+	background: linear-gradient(to right, #0E2124 50%, #56D9E8 100%);
+}
+#fLeft {
+    float: left;
+}
+#fRight {
+	float: right;
+}
+#fCenter {
+	display: block;
+    margin-left: 50%;
+    margin-right: 50%;
+	height: 46px;
+	width: 46px;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111111;
+}
+#homenav {
+    background-color: #56D9E8;
+}
+#home {
+	display: block;
+}
+#hot { 
+	display: none;
+}
+#new {
+	display: none;
+}
+#following {
+	display: none;
+}
+#form {
+	margin: 10px;
+	padding: 10px;
+	background-color: white;
+	float: left;
+	width: 33%;
+	border-radius: 5px;
+	margin-top: 54px;
+}
+#title {
+	margin: 5px;
+	padding: 10px;
+	background-color: white;
+	float: right;
+	overflow: auto;
+	width: 50%;
+	border-radius: 5px;
+	margin-top: 54px;
+	font-size: 100%;
+	color: #327D86;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Arial;
+}
+#feed {
+	margin: 5px;
+	padding: 10px;
+	background-color: white;
+	float: right;
+	overflow: auto;
+	width: 50%;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+#post {
+	margin: 10px;
+	padding: 10px;
+	background-color: white;
+	max-width: 50%;
+	border-radius: 5px;
+	float: left;
+	width: 33%;
+	margin-top: 54px;
+}
+#question {
+	border-color: transparent;
+	word-wrap: break-word;
+	width: 99%;
+	font-family: Arial;
+}
+#option {
+	border-radius: 5px;
+	padding: 5px;
+	margin: 5px;
+	width: 95%;
+	font-family: Arial;
+}
+#submit {
+	float: right;
+	padding: 10px;
+	margin: 5px;
+	margin-right: 10px;
+	background-color: #56D9E8;
+	border-radius: 5px;
+	border: 0px;
+	color: #0E2124;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Arial;
+	cursor: pointer;
+	font-size: 100%;
+	color: white;
+}
+#add {
+	float: left;
+	padding: 10px;
+	margin: 5px;
+	margin-left: 0px;
+	color: #327D86;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Arial;
+	background-color: white;
+	border: none;
+	outline: none; 
+	cursor: pointer;
+	font-size: 100%;
+}
+textarea {
+	resize: none;
+	overflow: hidden;
+	outline: none;
+}
+#formbuttons {
+	width: 95%;
+}

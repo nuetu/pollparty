@@ -1,0 +1,24 @@
+Top of the page is the menu. There is navigation, which includes Home, Hot, New, and following. On the right side is your username (click for account settings) along with your poll points (+1 for every like)
+
+On the home page, you can post a new poll, or view all your polls. There is also an option for settings, and an option to view polls you have voted on
+
+The hot page will have the most liked, voted, and commented posts over the past 24 hours. Once a poll is over 24 hours old, it is no longer eligible in hot page.
+
+New will have chronological order of polls
+
+Followers will have chronological posts from users you followed. 
+
+Ads will display every 10 polls.
+
+Sponcered polls can be a type of ad, for demographics
+
+
+
+
+Things I want to include
+- Daily poll (everybody votes on it, submitted by a user)
+- Search Bar
+- option to let users add options/disable
+- option to let users select multiple answers/disable
+- alerts (replies/ comments, update information, ect)
+- 
