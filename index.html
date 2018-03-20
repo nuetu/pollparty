@@ -59,12 +59,12 @@
 </head>
 <body>
 <nav>					<!-- THE NAVIGATION BAR -->
-		<li id="fLeft"><a id="homenav" href="#home" onclick="openhome()" >Home</a></li>
-		<li id="fLeft"><a id="hotnav" href="#hot" onclick="openhot()">Hot</a></li>
-		<li id="fLeft"><a id="newnav" href="#new" onclick="opennew()">New</a></li>
-		<li id="fLeft"><a id="followingnav" href="#following" onclick="openfollowing()">Following</a></li>
-		<li id="fRight"><a>Log In / Sign Up</a></li>
-		<img id="fCenter" src="logo.png" alt="Poll Party">
+		<li id="fLeft"><a id="homenav" class="hover" href="#home" onclick="openhome()" >Home</a></li>
+		<li id="fLeft"><a id="hotnav" class="hover" href="#hot" onclick="openhot()">Hot</a></li>
+		<li id="fLeft"><a id="newnav" class="hover" href="#new" onclick="opennew()">New</a></li>
+		<li id="fLeft"><a id="followingnav" class="hover" href="#following" onclick="openfollowing()">Following</a></li>
+		<li id="fRight"><a class="hover">Log In / Sign Up</a></li>
+		<img id="fCenter" class="hover" src="logo.png" alt="Poll Party">
 </nav>
 <div id="form"> 		<!-- THIS IS WHERE YOU ENTER SHIT -->
 		<form>
@@ -82,9 +82,9 @@
 		Posts from You: 
 	</div>
 	<div id="feed">
-		<p>Username</p>
-		Time from post
-		<p>Question:</p>
+		<input type="button" id="username" value="Username" name="feed"><br>
+		<time id="time">Time</time>
+		<p id="userquestion">Question</p>
 		<form>
 			<input type="radio" name="option" value="option1">Option 1<br>
 			<input type="radio" name="option" value="option2" >Option 2<br>
@@ -93,23 +93,23 @@
 		<br>
 	</div>
 	<div id="feed">
-		<p>Username</p>
-		Time from post
-		<p>Question:</p>
+		<input type="button" id="username" value="Nuetu" name="feed"><br>
+		<time id="time">20 mins ago</time>
+		<p id="userquestion">When you establish dominance in the world's nation, you must become the leader or else you shall die. Who is the leader now?</p>
 		<form>
-			<input type="radio" name="option" value="option1">Option 1<br>
-			<input type="radio" name="option" value="option2" >Option 2<br>
+			<input type="radio" name="option" value="option1">no<br>
+			<input type="radio" name="option" value="option2" >yes<br>
 		</form>
 		Like Comment
 		<br>
 	</div>
 	<div id="feed">
-		<p>Username</p>
-		Time from post	
-		<p>Question:</p>
+		<input type="button" id="username" value="DenimGod" name="feed"><br>
+		<time id="time">2 hours ago</time>
+		<p id="userquestion">If you had 3.fiddy, who would you give it to?</p>
 		<form>
-			<input type="radio" name="option" value="option1">Option 1<br>
-			<input type="radio" name="option" value="option2" >Option 2<br>
+			<input type="radio" name="option" value="option1">Loch nest mont stir<br>
+			<input type="radio" name="option" value="option2" >Big ol underwater dinosaur<br>
 		</form>
 		Like Comment
 		<br>

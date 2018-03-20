@@ -21,4 +21,11 @@ Things I want to include
 - option to let users add options/disable
 - option to let users select multiple answers/disable
 - alerts (replies/ comments, update information, ect)
-- 
+- bracket type polls. Users post one of these with all the options and people vote on them. Voters will be alerted when the bracket is open again
+
+
+My basic understanding. 
+
+User submits their post. Question and options are sent to data base, then pulled into the feed with their username and the time it was sent.
+Other user's computers grab this infromation from the data base, and display it. Then user votes, adding +1 points to the option they voted on.
+Vote is sent as +1 and sends it to the data base. Computer then grabs number of +1's sent to the data base and adds it to the total value.  
