@@ -12,7 +12,16 @@ Ads will display every 10 polls.
 
 Sponcered polls can be a type of ad, for demographics
 
-
+Thing mentioned in group chat:
+-we need to somehow code a whole admin shit otherwise we have to remove it directly from database
+-on resize, put both id="form" and id="feed" in the center
+-once the java script and css is done, we should implement it in the index, because otherwise the website will call for 3 HTTP requests
+-https://www.w3schools.com/howto/howto_css_login_form.asp
+-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
+-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_todo
+-How bout an analytics page where we show graphs of number of votes and polls and comments and shit
+-I was also thinking of a hidden page showing top posters and commenter And top voters
+-I need you to make the nav bar not looked so fucked when zooming
 
 
 Things I want to include
@@ -24,8 +33,16 @@ Things I want to include
 - bracket type polls. Users post one of these with all the options and people vote on them. Voters will be alerted when the bracket is open again
 
 
-My basic understanding. 
+My basic understanding:
 
 User submits their post. Question and options are sent to data base, then pulled into the feed with their username and the time it was sent.
 Other user's computers grab this infromation from the data base, and display it. Then user votes, adding +1 points to the option they voted on.
 Vote is sent as +1 and sends it to the data base. Computer then grabs number of +1's sent to the data base and adds it to the total value.  
+
+Site colors 
+#E9EBEE
+#111111
+#327D86
+#C4C4C4 
+#56D9E8
+#0E2124

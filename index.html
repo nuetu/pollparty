@@ -59,13 +59,21 @@
 </head>
 <body>
 <nav>					<!-- THE NAVIGATION BAR -->
-		<li id="fLeft"><a id="homenav" class="hover" href="#home" onclick="openhome()" >Home</a></li>
-		<li id="fLeft"><a id="hotnav" class="hover" href="#hot" onclick="openhot()">Hot</a></li>
-		<li id="fLeft"><a id="newnav" class="hover" href="#new" onclick="opennew()">New</a></li>
-		<li id="fLeft"><a id="followingnav" class="hover" href="#following" onclick="openfollowing()">Following</a></li>
-		<li id="fRight"><a class="hover">Log In / Sign Up</a></li>
-		<img id="fCenter" class="hover" src="logo.png" alt="Poll Party">
+		<li id="fLeft"><a id="homenav" class="hover" href="javascript:void(0)" onclick="openhome()">Home</a></li>
+		<li id="fLeft"><a id="hotnav" class="hover" href="javascript:void(0)" onclick="openhot()">Hot</a></li>
+		<li id="fLeft"><a id="newnav" class="hover" href="javascript:void(0)" onclick="opennew()">New</a></li>
+		<li id="fLeft"><a id="followingnav" class="hover" href="javascript:void(0)" onclick="openfollowing()">Following</a></li>
+		<li id="fLeft"><span onclick="openmobilenav()" id="nav">&#9773;</span></li>
+		<li id="fRight"><a class="hover" href="javascript:void(0)">Log In / Sign Up</a></li>
+		<img id="fCenter" src="logo.png" alt="Poll Party">
 </nav>
+<div id="mobilenav" class="mobilenav">					<!-- THE NAVIGATION BAR -->
+		<a href="javascript:void(0)" class="close" onclick="closemobilenav()">&times;</a>
+		<a href="javascript:void(0)" onclick="openhome()">Home</a>
+		<a href="javascript:void(0)" onclick="openhot()">Hot</a>
+		<a href="javascript:void(0)" onclick="opennew()">New</a>
+		<a href="javascript:void(0)" onclick="openfollowing()">Following</a>
+</div>
 <div id="form"> 		<!-- THIS IS WHERE YOU ENTER SHIT -->
 		<form>
 			<textarea id="question" placeholder="Ask Something..." name="question" required></textarea><br>
@@ -86,8 +94,8 @@
 		<time id="time">Time</time>
 		<p id="userquestion">Question</p>
 		<form>
-			<input type="radio" name="option" value="option1">Option 1<br>
-			<input type="radio" name="option" value="option2" >Option 2<br>
+			<input id="pointer" type="radio" name="option" value="option1">Option 1<br>
+			<input id="pointer" type="radio" name="option" value="option2">Option 2<br>
 		</form>
 		Like Comment
 		<br>
@@ -97,8 +105,8 @@
 		<time id="time">20 mins ago</time>
 		<p id="userquestion">When you establish dominance in the world's nation, you must become the leader or else you shall die. Who is the leader now?</p>
 		<form>
-			<input type="radio" name="option" value="option1">no<br>
-			<input type="radio" name="option" value="option2" >yes<br>
+			<input id="pointer" type="radio" name="option" value="option1">no<br>
+			<input id="pointer" type="radio" name="option" value="option2" >yes<br>
 		</form>
 		Like Comment
 		<br>
@@ -108,8 +116,8 @@
 		<time id="time">2 hours ago</time>
 		<p id="userquestion">If you had 3.fiddy, who would you give it to?</p>
 		<form>
-			<input type="radio" name="option" value="option1">Loch nest mont stir<br>
-			<input type="radio" name="option" value="option2" >Big ol underwater dinosaur<br>
+			<input id="pointer" type="radio" name="option" value="option1">Loch nest mont stir<br>
+			<input id="pointer" type="radio" name="option" value="option2" >Big ol underwater dinosaur<br>
 		</form>
 		Like Comment
 		<br>
@@ -120,7 +128,7 @@
 		Feed:
 	</div>
 	<div id="feed">
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>ya
+	<br>hot, fuck you<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>ya
 	</div>
 </div>
 <div id="new">			<!-- NEW PAGE NEW PAGE NEW PAGE NEW PAGE  -->
@@ -128,7 +136,7 @@
 		New:
 	</div>
 	<div id="feed">
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>ya
+	<br>new, fuck you<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>ya
 	</div>
 </div>
 <div id="following"> 	<!-- FOLLOWING PAGE FOLLOWING PAGE  -->
@@ -136,7 +144,7 @@
 		Posts from dudes ya like:
 	</div>
 	<div id="feed">
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>ya
+	<br>following, fuck you<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>ya
 	</div>
 </div>
 </body>
