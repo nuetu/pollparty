@@ -91,6 +91,15 @@ li .hover {
     font-size: 36px;
     margin-left: 50px;
 }
+#nav {
+	text-decoration: none;
+	color: white;
+    display: none;
+    text-align: center;
+	padding: 7px;
+	font-size: 130%;
+	cursor: pointer;
+}
 								/*End Mobile Navigation */
 							/*End Navigation */
 							/* Posts */
