@@ -8,6 +8,10 @@ body {
 	background-color: #E9EBEE;
 	font-family: Arial;
 }
+#pointer {
+	cursor: pointer;
+}
+							/* Navigation */
 nav {
     list-style-type: none;
     overflow: auto;
@@ -42,6 +46,54 @@ li .hover {
 .hover {
 	background-color: none;
 }
+#homenav {
+    background-color: #56D9E8;
+}
+#home {
+	display: block;
+}
+#hot { 
+	display: none;
+}
+#new {
+	display: none;
+}
+#following {
+	display: none;
+}
+								/*Mobile Navigation*/
+.mobilenav {
+    height: 40%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #0E2124, #56D9E8);
+    overflow-x: hidden;
+    transition: 0.5s;
+	padding-top: 8px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.mobilenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.mobilenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+								/*End Mobile Navigation */
+							/*End Navigation */
+							/* Posts */
 #username {
 	list-style-type: none;
 	padding-bottom: 3px;
@@ -71,21 +123,6 @@ li .hover {
 	text-decoration: none;
 	font-family: Arial;
 	margin-left: 27px;
-}
-#homenav {
-    background-color: #56D9E8;
-}
-#home {
-	display: block;
-}
-#hot { 
-	display: none;
-}
-#new {
-	display: none;
-}
-#following {
-	display: none;
 }
 #form {
 	margin: 10px;
@@ -137,6 +174,8 @@ li .hover {
 	width: 99%;
 	font-family: Arial;
 }
+						/* End Posts */
+						/* Form */
 #option {
 	border-radius: 5px;
 	padding: 5px;
@@ -184,18 +223,8 @@ textarea {
 #formbuttons {
 	width: 95%;
 }
-#pointer {
-	cursor: pointer;
-}
-#nav {
-	text-decoration: none;
-	color: white;
-    display: none;
-    text-align: center;
-	padding: 7px;
-	font-size: 130%;
-	cursor: pointer;
-}
+						/* End Form */
+						/* Mobile Re-format */
 @media screen and (max-width:600px) {
 	#form, #feed, #add, #submit {
 		float: none;
@@ -230,33 +259,4 @@ textarea {
 	#nav {
 		display: block;
 		}
-}
-.mobilenav {
-    height: 40%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to right, #0E2124, #56D9E8);
-    overflow-x: hidden;
-    transition: 0.5s;
-	padding-top: 8px;
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-}
-.mobilenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-.mobilenav .close {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
 }
