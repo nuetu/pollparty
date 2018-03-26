@@ -1,3 +1,4 @@
+
 function openhome() {
     var w = document.getElementById('home');
 	var x = document.getElementById('hot');
@@ -17,6 +18,7 @@ function openhome() {
 	d.style.backgroundColor = "transparent";
 	document.getElementById("mobilenav").style.width = "0";
 }
+
 function openhot() {
 	var w = document.getElementById('home');
     var x = document.getElementById('hot');
@@ -36,6 +38,7 @@ function openhot() {
 	d.style.backgroundColor = "transparent";
 	document.getElementById("mobilenav").style.width = "0";
 }
+
 function opennew() {
 	var w = document.getElementById('home');
 	var x = document.getElementById('hot');
@@ -55,6 +58,7 @@ function opennew() {
 	d.style.backgroundColor = "transparent";
 	document.getElementById("mobilenav").style.width = "0";
 }
+
 function openfollowing() {
 	var w = document.getElementById('home');
 	var x = document.getElementById('hot');
@@ -74,12 +78,35 @@ function openfollowing() {
 	d.style.backgroundColor = "#56D9E8";
 	document.getElementById("mobilenav").style.width = "0";
 }
+
 function linkunavailable() {
-    alert("You are literally a faggot if you haven't already known");
+    alert("This link is unavailable");
 }
+
 function openmobilenav() {
     document.getElementById("mobilenav").style.width = "100%";
 }
+
 function closemobilenav() {
     document.getElementById("mobilenav").style.width = "0";
+}
+
+function addOption() {
+	var num = document.getElementById("optionsList").getElementsByTagName("li").length;
+	$(function(){
+		var last = $("li").last();
+		var newItem = $("#optionsList").append('<li><input type="text" name="Option" id="option" maxlength="140" placeholder="Option"></li>');
+	});
+}
+
+function submitPoll() {
+	var home = document.getElementById("home");
+	var post = document.createElement('div');
+	home.append(post);
+	post.setAttribute("id","feed");
+	$(function() {
+		$(post).append('<input type="text" id="username" value="Username" name="feed"><br><time id="time">Time</time><p id="userquestion">Question</p><form><input id="pointer" type="radio" name="option" value="option1">Option 1<br><input id="pointer" type="radio" name="option" value="option2">Option 2<br></form>Like Comment<br>');
+		$("#home").append('<br>');
+	});
+	
 }
