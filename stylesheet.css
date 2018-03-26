@@ -42,6 +42,14 @@ li .hover {
 .hover {
 	background-color: none;
 }
+.options{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+.option{
+	
+}
 #username {
 	list-style-type: none;
 	padding-bottom: 3px;
