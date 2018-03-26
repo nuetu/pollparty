@@ -32,6 +32,8 @@ Things I want to include
 - alerts (replies/ comments, update information, ect)
 - bracket type polls. Users post one of these with all the options and people vote on them. Voters will be alerted when the bracket is open again
 
+Things we may wanna change
+-In mobile make the menu bar grow down and out of the button. So that you press the menu button to close the menu.
 
 My basic understanding:
 
