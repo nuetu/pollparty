@@ -18,6 +18,7 @@ function openhome() {
 	d.style.backgroundColor = "transparent";
 	document.getElementById("mobilenav").style.width = "0";
 }
+
 function openhot() {
 	var w = document.getElementById('home');
     var x = document.getElementById('hot');
@@ -37,6 +38,7 @@ function openhot() {
 	d.style.backgroundColor = "transparent";
 	document.getElementById("mobilenav").style.width = "0";
 }
+
 function opennew() {
 	var w = document.getElementById('home');
 	var x = document.getElementById('hot');
@@ -56,6 +58,7 @@ function opennew() {
 	d.style.backgroundColor = "transparent";
 	document.getElementById("mobilenav").style.width = "0";
 }
+
 function openfollowing() {
 	var w = document.getElementById('home');
 	var x = document.getElementById('hot');
@@ -75,15 +78,19 @@ function openfollowing() {
 	d.style.backgroundColor = "#56D9E8";
 	document.getElementById("mobilenav").style.width = "0";
 }
+
 function linkunavailable() {
     alert("This link is unavailable");
 }
+
 function openmobilenav() {
     document.getElementById("mobilenav").style.width = "100%";
 }
+
 function closemobilenav() {
     document.getElementById("mobilenav").style.width = "0";
 }
+
 function addOption() {
 	var num = document.getElementById("optionsList").getElementsByTagName("li").length;
 	$(function(){
@@ -91,6 +98,7 @@ function addOption() {
 		var newItem = $("#optionsList").append('<li><input type="text" name="Option" id="option" maxlength="140" placeholder="Option"></li>');
 	});
 }
+
 function submitPoll() {
 	var home = document.getElementById("home");
 	var post = document.createElement('div');
