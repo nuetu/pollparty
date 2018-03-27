@@ -1,4 +1,15 @@
-Top of the page is the menu. There is navigation, which includes Home, Hot, New, and following. On the right side is your username (click for account settings) along with your poll points (+1 for every like)
+Top of the page is the menu. There is navigation, which includes Home, Hot, New, and following. On the right side is your username (click for account settings) along Current Tasks: 
+-Make character count at the end of options. 
+-Automatically Resize the text area. 
+-Make the mobile navbar transition in from the top. 
+-Make the nav bar close and open with the click of the =
+-add an x to remove an option &times;
+-add center element that fades the background when you click log in/ sign up
+
+
+
+
+with your poll points (+1 for every like)
 
 On the home page, you can post a new poll, or view all your polls. There is also an option for settings, and an option to view polls you have voted on
 
