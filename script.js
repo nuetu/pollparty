@@ -108,5 +108,12 @@ function submitPoll() {
 		$(post).append('<input type="button" id="username" value="Username" name="feed"><br><time id="time">Time</time><p id="userquestion">Question</p><form><input id="pointer" type="radio" name="option" value="option1">Option 1<br><input id="pointer" type="radio" name="option" value="option2">Option 2<br></form>Like Comment<br>');
 		$("#home").append('<br>');
 	});
-	
+
+}
+
+function newMobilePoll() {
+
+  $(function() {
+    
+  });
 }
