@@ -59,5 +59,3 @@ Site colors
 #C4C4C4
 #56D9E8
 #0E2124
-
-something new
