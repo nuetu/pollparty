@@ -66,6 +66,7 @@
 		<li id="fLeft"><span onclick="openmobilenav()" id="nav">&equiv;</span></li>
 		<li id="fRight"><a class="hover" href="javascript:void(0)">Log In / Sign Up</a></li>
 		<img id="fCenter" src="logo.png" alt="Poll Party">
+		<button id="createpoll" onclick="newMobilePoll()">+</button>
 </nav>
 <div id="mobilenav" class="mobilenav">					<!-- THE MOBILE NAVIGATION-->
 		<a href="javascript:void(0)" onclick="openhome()">Home</a>
@@ -73,7 +74,13 @@
 		<a href="javascript:void(0)" onclick="opennew()">New</a>
 		<a href="javascript:void(0)" onclick="openfollowing()">Following</a>
 </div>
-<div id="form"> 										<!-- THIS IS WHERE YOU ENTER SHIT -->
+
+<div id="spacer" z-index="1">
+	<br>
+	<br>
+	<br>
+</div>
+<div id="form" class="pollwindow"> 										<!-- THIS IS WHERE YOU ENTER YOUR QUESTION -->
 		<form>
 			<textarea id="question" placeholder="Ask Something..." name="question" required></textarea><br>
 			<hr>
@@ -88,7 +95,7 @@
 <div id="home"> 										<!-- HOME PAGE HOME PAGE HOME PAGE HOME PAGE-->
 	<!-- div goes here -->
 	<div id="title">
-		Posts from You: 
+		Posts from You:
 	</div>
 </div>
 <div id="hot"> 											<!-- HOT PAGE HOT PAGE HOT PAGE HOT PAGE -->
@@ -96,7 +103,6 @@
 		Feed:
 	</div>
 	<div id="feed">
-	<br>hot, fuck you<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>ya
 	</div>
 </div>
 <div id="new">											<!-- NEW PAGE NEW PAGE NEW PAGE NEW PAGE  -->
@@ -104,15 +110,13 @@
 		New:
 	</div>
 	<div id="feed">
-	<br>new, fuck you<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>ya
 	</div>
 </div>
 <div id="following"> 									<!-- FOLLOWING PAGE FOLLOWING PAGE  -->
 	<div id="title">
-		Posts from dudes ya like:
+		Following:
 	</div>
 	<div id="feed">
-	<br>following, fuck you<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>ya
 	</div>
 </div>
 </body>

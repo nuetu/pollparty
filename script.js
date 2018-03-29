@@ -1,4 +1,11 @@
 
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 function openhome() {
     var w = document.getElementById('home');
 	var x = document.getElementById('hot');
@@ -102,18 +109,36 @@ function addOption() {
 function submitPoll() {
 	var home = document.getElementById("home");
 	var post = document.createElement('div');
+  var all = document.getElementsByTagName("body")[0].querySelectorAll("div");
+  var i;
 	home.append(post);
 	post.setAttribute("id","feed");
 	$(function() {
 		$(post).append('<input type="button" id="username" value="Username" name="feed"><br><time id="time">Time</time><p id="userquestion">Question</p><form><input id="pointer" type="radio" name="option" value="option1">Option 1<br><input id="pointer" type="radio" name="option" value="option2">Option 2<br></form>Like Comment<br>');
 		$("#home").append('<br>');
-	});
-
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+      $(".pollwindow").css('display','none');
+	}
+});
+  for (i = 0; i < all.length;i++) {
+    all[i].style.backgroundColor = "rgba(255,255,255)";
+  }
 }
 
 function newMobilePoll() {
-
+  var all = document.getElementsByTagName("body")[0].querySelectorAll("div");
   $(function() {
-    
+    $(".pollwindow").css('display','block');
+    $(".pollwindow").css('z-index','1');
+    $(".pollwindow").css('position','fixed');
+    $(".pollwindow").css('left','10%');
   });
+  var i;
+  for (i = 0; i < all.length;i++) {
+    if(all[i].id != 'form') {
+      all[i].style.backgroundColor = "rgba(0,0,0,0.4)";
+    } else {
+    all[i].style.backgroundColor = "rgba(255,255,255)";
+  }
+  }
 }
