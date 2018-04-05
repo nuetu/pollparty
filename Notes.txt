@@ -1,13 +1,11 @@
-Top of the page is the menu. There is navigation, which includes Home, Hot, New, and following. On the right side is your username (click for account settings) along Current Tasks:
+Top of the page is the menu. There is navigation, which includes Home, Hot, New, and following. On the right side is your username (click for account settings) along 
+Current Tasks:
 -Make character count at the end of options.
 -Automatically Resize the text area.
 -Make the mobile navbar transition in from the top.
 -Make the nav bar close and open with the click of the &equiv;
 -add an x to remove an option &times;
 -add center element that fades the background when you click log in/ sign up
-
-
-
 
 with your poll points (+1 for every like)
 
@@ -45,12 +43,6 @@ Things I want to include
 
 Things we may wanna change
 -In mobile make the menu bar grow down and out of the button. So that you press the menu button to close the menu.
-
-My basic understanding:
-
-User submits their post. Question and options are sent to data base, then pulled into the feed with their username and the time it was sent.
-Other user's computers grab this infromation from the data base, and display it. Then user votes, adding +1 points to the option they voted on.
-Vote is sent as +1 and sends it to the data base. Computer then grabs number of +1's sent to the data base and adds it to the total value.
 
 Site colors
 #E9EBEE
