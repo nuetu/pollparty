@@ -1,53 +1,53 @@
 body {
-    display: block;
-    margin: 0px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-	background-color: #E9EBEE;
-	font-family: Arial;
+  display: block;
+  margin: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  background-color: #E9EBEE;
+  font-family: Arial;
 }
 #pointer {
-	cursor: pointer;
+  cursor: pointer;
 }
 							/* Navigation */
 nav {
-    list-style-type: none;
-    overflow: auto;
+  list-style-type: none;
+  overflow: auto;
 	position: fixed;
 	width: 100%;
 	background: linear-gradient(to right, #0E2124 50%, #56D9E8 100%);
 	top: 0px;
 }
 #fLeft {
-    float: left;
+  float: left;
 }
 #fRight {
 	float: right;
 }
 #fCenter {
 	display: block;
-    margin-left: 50%;
-    margin-right: 50%;
+  margin-left: 50%;
+  margin-right: 50%;
 	height: 46px;
 	width: 46px;
 }
 li .hover {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 .hover:hover {
-    background-color: #111111;
+  background-color: #111111;
 }
 .hover {
 	background-color: none;
 }
 #homenav {
-    background-color: #56D9E8;
+  background-color: #56D9E8;
 }
 #home {
 	display: block;
@@ -63,39 +63,39 @@ li .hover {
 }
 								/*Mobile Navigation*/
 .mobilenav {
-    height: 40%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 42px;
-    left: 0;
-    background: linear-gradient(to bottom, #56D9E8, #0E2124);
-    overflow-x: hidden;
-    transition: 0.5s;
+  height: 40%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 42px;
+  left: 0;
+  background: linear-gradient(to bottom, #56D9E8, #0E2124);
+  overflow-x: hidden;
+  transition: 0.5s;
 	padding-top: 8px;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
 .mobilenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
 }
 .mobilenav .close {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 #nav {
 	text-decoration: none;
 	color: white;
-    display: none;
-    text-align: center;
+  display: none;
+  text-align: center;
 	padding: 7px;
 	font-size: 130%;
 	cursor: pointer;
@@ -169,7 +169,7 @@ li .hover {
 	text-decoration: none;
 	font-family: Arial;
 }
-#feed {
+#poll {
 	margin: 5px;
 	padding: 10px;
 	background-color: white;
@@ -245,14 +245,15 @@ textarea {
 	width: 95%;
 }
 #spacer {display: none;}
+#createpoll{display:none;}
 						/* End Form */
 						/* Mobile Re-format */
 @media screen and (max-width:600px) {
-	#form, #feed, #add, #submit {
+	#form, #poll, #add, #submit {
 		float: none;
 		margin: auto;
 	}
-	#feed {
+	#poll {
 		margin-top: 5px;
 		width: 75%;
 	}
@@ -288,6 +289,7 @@ textarea {
     background-color: #56D9E8;
     color: white;
     position: absolute;
+    display: block;
     border: none;
     border-radius: 50%;
     text-align: center;
