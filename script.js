@@ -136,14 +136,14 @@ function addInfo() {
     //var username = this.username;
     var question1 = $("textarea").find("#question");
     var uname = $("div").find("#username");
-    var qstn = $("div").find("#userquestion");
+    var qstn = $("p").find("#userquestion");
     var i;
     for(i=0;i<uname.length;i++){
       uname[i].value = username;
     }
     var j;
     for(j=0;j<qstn.length;j++) {
-      qstn[j].innerHTML = question1.value;
+      qstn[j].innerHTML = ""+question;
     }
   });
 
