@@ -126,7 +126,7 @@ function newMobilePoll() {
     $(".pollwindow").css('position','fixed');
     $(".pollwindow").css('left','10%');
     $("body").css('background-color','rgba(0,0,0,0.5)');
-    $("#poll").css('background-color','rgba(0,0,0,0.5)');
+    $("#poll").css('background-color','rgba(233,235,238,0.5)');
   });
 
 }
@@ -134,17 +134,14 @@ function newMobilePoll() {
 function addInfo() {
   $(function() {
     //var username = this.username;
-    var question1 = $("textarea").find("#question");
+    //$("form").find("#question").css("color","blue");
     var uname = $("div").find("#username");
-    var qstn = $("p").find("#userquestion");
+    var qstn = $("div").find("#userquestion");
     var i;
     for(i=0;i<uname.length;i++){
       uname[i].value = username;
     }
-    var j;
-    for(j=0;j<qstn.length;j++) {
-      qstn[j].innerHTML = ""+question;
-    }
+    qstn.innerHTML = question;
   });
 
 }
