@@ -1,4 +1,4 @@
-var username = "John Doe";
+var username = "Rowan Ramsey";
 var question = "Who is the better coder, Rowan or Rowan?";
 /*Switches to the "Home" tab*/
 function openhome() {
@@ -133,15 +133,19 @@ function newMobilePoll() {
 
 function addInfo() {
   $(function() {
-    //var username = this.username;
     //$("form").find("#question").css("color","blue");
     var uname = $("div").find("#username");
     var qstn = $("div").find("#userquestion");
+    question = $("div").find("#question").value;
     var i;
     for(i=0;i<uname.length;i++){
       uname[i].value = username;
     }
-    qstn.innerHTML = question;
+    var j;
+    for(j=0;j<qstn.length;j++){
+      qstn[j].innerHTML = question;
+    }
+    //qstn.value = question;
   });
 
 }
