@@ -136,7 +136,7 @@ function addInfo() {
     //$("form").find("#question").css("color","blue");
     var uname = $("div").find("#username");
     var qstn = $("div").find("#userquestion");
-    question = $("div").find("#question").value;
+    question = $("textarea#question").val();
     var i;
     for(i=0;i<uname.length;i++){
       uname[i].value = username;
