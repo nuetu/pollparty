@@ -106,7 +106,7 @@ function submitPoll() {
 	var feed = document.getElementById("feed");
 	var post = document.createElement("div");
 	feed.append(post);
-	post.setAttribute("id","poll");
+	post.setAttribute("class","poll");
 	$(function() {
     /*Adds a "Post" to the feed by appending the HTML code*/
     $(post).append('<input type="button" id="username" value="Username" name="feed"><br><time id="time">Time</time><p id="userquestion">Question</p><form><input id="pointer" type="radio" name="option" value="option1">Option 1<br><input id="pointer" type="radio" name="option" value="option2">Option 2<br></form>Like Comment<br><script>addInfo()</script>');
@@ -114,8 +114,8 @@ function submitPoll() {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
       $(".pollwindow").css('display','none');
     }
-    $("body").css('background-color','#E9EBEE');
-    $("#poll").css('background-color','rgb(255,255,255)');
+    $("body").css('background-color','rgb(233,235,238)');
+    $(".poll").css('background-color','rgb(255,255,255)');
   });
 }
 /*Opens the Poll creator window for mobile devices*/
@@ -126,7 +126,8 @@ function newMobilePoll() {
     $(".pollwindow").css('position','fixed');
     $(".pollwindow").css('left','10%');
     $("body").css('background-color','rgba(0,0,0,0.5)');
-    $("#poll").css('background-color','rgba(0,0,0,0.5)');
+    $(".poll").css('background-color','rgba(233,235,238,0.5)');
+    $(".poll").find('input').css('background-color','rgba(233,235,238,0.5)');
   });
 
 }
