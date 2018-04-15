@@ -1,4 +1,4 @@
-var username = "John Doe";
+var username = "Rowan Ramsey";
 var question = "Who is the better coder, Rowan or Rowan?";
 /*Switches to the "Home" tab*/
 function openhome() {
@@ -105,11 +105,16 @@ function addOption() {
 function submitPoll() {
 	var feed = document.getElementById("feed");
 	var post = document.createElement("div");
+<<<<<<< HEAD
 	feed.append(post);
 	post.setAttribute("class","poll");
+=======
+	feed.prepend(post);
+	post.setAttribute("id","poll");
+>>>>>>> 7df1a9705ffd917f6ff1741fc9f4346371bd6860
 	$(function() {
     /*Adds a "Post" to the feed by appending the HTML code*/
-    $(post).append('<input type="button" id="username" value="Username" name="feed"><br><time id="time">Time</time><p id="userquestion">Question</p><form><input id="pointer" type="radio" name="option" value="option1">Option 1<br><input id="pointer" type="radio" name="option" value="option2">Option 2<br></form>Like Comment<br><script>addInfo()</script>');
+    $(post).append('<input type="button" id="username" value="Username" name="feed"><br><time id="time">Time</time><p id="userquestion">Question</p><form><input id="opt1" type="radio" name="option" value="option1">Option 1<br><input id="opt2" type="radio" name="option" value="option2">Option 2<br></form>Like Comment<br><script>addInfo()</script>');
     /*This checks to see if the user is using a mobile device.*/
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
       $(".pollwindow").css('display','none');
@@ -126,26 +131,38 @@ function newMobilePoll() {
     $(".pollwindow").css('position','fixed');
     $(".pollwindow").css('left','10%');
     $("body").css('background-color','rgba(0,0,0,0.5)');
+<<<<<<< HEAD
     $(".poll").css('background-color','rgba(233,235,238,0.5)');
     $(".poll").find('input').css('background-color','rgba(233,235,238,0.5)');
+=======
+    $("#poll").css('background-color','rgba(233,235,238,0.5)');
+>>>>>>> 7df1a9705ffd917f6ff1741fc9f4346371bd6860
   });
 
 }
 
 function addInfo() {
   $(function() {
-    //var username = this.username;
-    var question1 = $("textarea").find("#question");
+    //$("form").find("#question").css("color","blue");
     var uname = $("div").find("#username");
-    var qstn = $("div").find("#userquestion");
+
+    var qstn = $("ul").find("#poll").first().find("#userquestion");
+    question = $("textarea#question").val();
+
+    /*
+    var opt1 = $("ul").find("#poll").first().find("opt1");
+    option1 = $(""); */
+
     var i;
     for(i=0;i<uname.length;i++){
       uname[i].value = username;
     }
-    var j;
-    for(j=0;j<qstn.length;j++) {
-      qstn[j].innerHTML = question1.value;
+
+    for(i=0;i<qstn.length;i++){
+      qstn[i].innerHTML = question;
     }
+    //qstn.value = question;
+
   });
 
 }
