@@ -105,13 +105,10 @@ function addOption() {
 function submitPoll() {
 	var feed = document.getElementById("feed");
 	var post = document.createElement("div");
-<<<<<<< HEAD
 	feed.append(post);
 	post.setAttribute("class","poll");
-=======
 	feed.prepend(post);
 	post.setAttribute("id","poll");
->>>>>>> 7df1a9705ffd917f6ff1741fc9f4346371bd6860
 	$(function() {
     /*Adds a "Post" to the feed by appending the HTML code*/
     $(post).append('<input type="button" id="username" value="Username" name="feed"><br><time id="time">Time</time><p id="userquestion">Question</p><form><input id="opt1" type="radio" name="option" value="option1">Option 1<br><input id="opt2" type="radio" name="option" value="option2">Option 2<br></form>Like Comment<br><script>addInfo()</script>');
@@ -131,12 +128,9 @@ function newMobilePoll() {
     $(".pollwindow").css('position','fixed');
     $(".pollwindow").css('left','10%');
     $("body").css('background-color','rgba(0,0,0,0.5)');
-<<<<<<< HEAD
     $(".poll").css('background-color','rgba(233,235,238,0.5)');
     $(".poll").find('input').css('background-color','rgba(233,235,238,0.5)');
-=======
     $("#poll").css('background-color','rgba(233,235,238,0.5)');
->>>>>>> 7df1a9705ffd917f6ff1741fc9f4346371bd6860
   });
 
 }
