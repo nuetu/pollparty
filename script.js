@@ -1,5 +1,5 @@
-var username = "Rowan Ramsey";
-var question = "Who is the better coder, Rowan or Rowan?";
+var username = "John Doe";
+var question = "Who is the better coder, Person1 or Person2?";
 /*Switches to the "Home" tab*/
 function openhome() {
   var w = document.getElementById('home');
@@ -111,7 +111,7 @@ function submitPoll() {
 	post.setAttribute("id","poll");
 	$(function() {
     /*Adds a "Post" to the feed by appending the HTML code*/
-    $(post).append('<input type="button" id="username" value="Username" name="feed"><br><time id="time">Time</time><p id="userquestion">Question</p><form><input id="opt1" type="radio" name="option" value="option1">Option 1<br><input id="opt2" type="radio" name="option" value="option2">Option 2<br></form>Like Comment<br><script>addInfo()</script>');
+    $(post).append('<li><input type="button" id="username" value="Username" name="feed"><br><time id="time">Time</time><p id="userquestion">Question</p><form><input id="option" type="radio" name="option" value="option1">Option 1<br><input id="option" type="radio" name="option" value="option2">Option 2<br></form>Like Comment<br><script>addInfo()</script></li>');
     /*This checks to see if the user is using a mobile device.*/
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
       $(".pollwindow").css('display','none');
@@ -136,16 +136,16 @@ function newMobilePoll() {
 }
 
 function addInfo() {
+  var optionsArray;
   $(function() {
-    //$("form").find("#question").css("color","blue");
+    var post = $("ul").find("#poll").first();
+    optionsArray = post.find("li").find("#option");
+
     var uname = $("div").find("#username");
 
-    var qstn = $("ul").find("#poll").first().find("#userquestion");
+    var qstn = post.first().find("#userquestion");
     question = $("textarea#question").val();
 
-    /*
-    var opt1 = $("ul").find("#poll").first().find("opt1");
-    option1 = $(""); */
 
     var i;
     for(i=0;i<uname.length;i++){
@@ -154,6 +154,9 @@ function addInfo() {
 
     for(i=0;i<qstn.length;i++){
       qstn[i].innerHTML = question;
+    }
+    for(i=0;i<optionsArray.length;i++) {
+      optionsArray[i].innerHTML = "What";
     }
     //qstn.value = question;
 
