@@ -57,6 +57,7 @@
 <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
 <link rel="stylesheet" href="stylesheet.css">
 </head>
+
 <body>
 <nav>													<!-- THE NAVIGATION BAR -->
 		<li id="fLeft"><a id="homenav" class="hover" href="javascript:void(0)" onclick="openhome()">Home</a></li>
@@ -64,10 +65,13 @@
 		<li id="fLeft"><a id="newnav" class="hover" href="javascript:void(0)" onclick="opennew()">New</a></li>
 		<li id="fLeft"><a id="followingnav" class="hover" href="javascript:void(0)" onclick="openfollowing()">Following</a></li>
 		<li id="fLeft"><span onclick="openmobilenav()" id="nav">&equiv;</span></li>
-		<li id="fRight"><a class="hover" href="javascript:void(0)">Log In / Sign Up</a></li>
+
+		<li id="fRight"><a class="hover" href="javascript:void(0)" onclick="document.getElementById(loginSignup).style.display='block'">Log In / Sign Up</a></li>
+
 		<img id="fCenter" src="logo.png" alt="Poll Party">
 		<button id="createpoll" onclick="newMobilePoll()">+</button>
 </nav>
+
 <div id="mobilenav" class="mobilenav">					<!-- THE MOBILE NAVIGATION-->
 		<a href="javascript:void(0)" onclick="openhome()">Home</a>
 		<a href="javascript:void(0)" onclick="openhot()">Hot</a>
@@ -80,6 +84,36 @@
 	<br>
 	<br>
 </div>
+
+<div id="loginSignup" class="modal">
+	<span onclick="document.getElementById('loginSignup').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+	<!-- Form -->
+	<form class="modal-content animate" action="/action_page.php">
+		<div class="imgcontainer">
+			<imgsrc="logo.png" alt="PPLogo" class="Avatar">
+		</div>
+
+		<div class="container">
+			<label for="uname"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="uname" required>
+
+			<label for="pswd"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="pswd" required>
+
+			<button type="submit">Login</button>
+			<label>
+				<input type="checkbox" checked="checked" name="remember"> Remember Me
+			</label>
+		</div>
+
+		<div class="container" style="background-color:#f1f1f1"> <!-- CHANGE THIS COLOR -->
+			<button type="button" onclick="document.getElementById('loginSignup').stye.display='none'" class="cancelButton">Cancel</button>
+			<span class="pswd"><a href="#">Forgot password?</a></span>
+		</div>
+	</form>
+</div>
+
 <div id="form" class="pollwindow"> 										<!-- THIS IS WHERE YOU ENTER YOUR QUESTION -->
 		<form>
 			<textarea id="question" placeholder="Ask Something..." name="question" required></textarea><br>
@@ -92,6 +126,7 @@
 			<input onclick="submitPoll()" type="button" id="submit" value="Go for it" name="question">
 		</form>
 </div>
+
 <div id="home"> 										<!-- HOME PAGE HOME PAGE HOME PAGE HOME PAGE-->
 	<!-- div goes here -->
 	<div id="title">
@@ -103,6 +138,7 @@
 		</ul>
 	</div>
 </div>
+
 <div id="hot"> 											<!-- HOT PAGE HOT PAGE HOT PAGE HOT PAGE -->
 	<div id="title">
 		Feed:
@@ -110,6 +146,7 @@
 	<div id="feed">
 	</div>
 </div>
+
 <div id="new">											<!-- NEW PAGE NEW PAGE NEW PAGE NEW PAGE  -->
 	<div id="title">
 		New:
@@ -117,6 +154,7 @@
 	<div id="feed">
 	</div>
 </div>
+
 <div id="following"> 									<!-- FOLLOWING PAGE FOLLOWING PAGE  -->
 	<div id="title">
 		Following:
