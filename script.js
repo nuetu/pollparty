@@ -111,7 +111,7 @@ function submitPoll() {
 	post.setAttribute("id","poll");
 	$(function() {
     /*Adds a "Post" to the feed by appending the HTML code*/
-    $(post).append('<li><input type="button" id="username" value="Username" name="feed"><br><time id="time">Time</time><p id="userquestion">Question</p><form><input id="option" type="radio" name="option" value="option1">Ethan hates black people<br><input id="option" type="radio" name="option" value="option2">Option 2<br></form>Like Comment<br><script>addInfo()</script></li>');
+    $(post).append('<li><input type="button" id="username" value="Username" name="feed"><br><time id="time">Time</time><p id="userquestion">Question</p><form><input id="option" type="radio" name="option" value="option1">Option 1<br><input id="option" type="radio" name="option" value="option2">Option 2<br></form>Like Comment<br><script>addInfo()</script></li>');
     /*This checks to see if the user is using a mobile device.*/
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
       $(".pollwindow").css('display','none');
