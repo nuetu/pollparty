@@ -126,6 +126,39 @@ li .hover {
   width: 80%;
 }
 
+              /* Login/Signup Form Close Button */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+              /* Login/Signup Form Background Close Hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+              /* Login/Signup Form Background Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
 							/* Posts */
 #options {
 	list-style: none;
