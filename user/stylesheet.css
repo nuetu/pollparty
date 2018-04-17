@@ -1,0 +1,149 @@
+body {
+  display: block;
+  margin: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  background-color: #E9EBEE;
+  font-family: Arial;
+}
+#pointer {
+  cursor: pointer;
+}
+							/* Navigation */
+nav {
+  list-style-type: none;
+  overflow: auto;
+	position: fixed;
+	width: 100%;
+	background: linear-gradient(to right, #0E2124 50%, #56D9E8 100%);
+	top: 0px;
+}
+#fLeft {
+  float: left;
+}
+#fRight {
+	float: right;
+}
+#fCenter {
+	display: block;
+  margin-left: 50%;
+  margin-right: 50%;
+	height: 46px;
+	width: 46px;
+}
+li .hover {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.hover:hover {
+  background-color: #111111;
+}
+.hover {
+	background-color: none;
+}
+#home {
+	display: none;
+}
+#hot {
+	display: none;
+}
+#new {
+	display: none;
+}
+#following {
+	display: none;
+}
+								/*Mobile Navigation*/
+.mobilenav {
+  height: 40%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 42px;
+  left: 0;
+  background: linear-gradient(to bottom, #56D9E8, #0E2124);
+  overflow-x: hidden;
+  transition: 0.5s;
+	padding-top: 8px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.mobilenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+.mobilenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#nav {
+	text-decoration: none;
+	color: white;
+  display: none;
+  text-align: center;
+	padding: 7px;
+	font-size: 130%;
+	cursor: pointer;
+}
+#title {
+	margin: 5px;
+	padding: 10px;
+	background-color: white;
+	float: left;
+	overflow: auto;
+	width: 50%;
+	border-radius: 5px;
+	margin-top: 54px;
+	font-size: 100%;
+	color: #327D86;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Arial;
+}
+#createpoll {
+	display:none;
+}
+						/* Mobile Re-format */
+@media screen and (max-width:600px) {
+	#title {
+		margin-top: 5px;
+		width: 75%;
+	}
+	nav {
+		background: linear-gradient(to bottom, #0E2124, #56D9E8);
+		display: block;
+	}
+	#createpoll {
+   		background-color: #56D9E8;
+    		color: white;
+    		position: absolute;
+    		display: block;
+    		border: none;
+    		border-radius: 50%;
+    		text-align: center;
+    		text-decoration: none;
+    		font-size: 25px;
+    		top: 7px;
+    		right: 10px;
+    		width: 30px;
+    		height: 30px;
+  	}
+	#nav {
+		display: block;
+	}
+	#hotnav, #newnav, #followingnav, #homenav, #fRight, #title {
+		display: none;
+	}
+}
