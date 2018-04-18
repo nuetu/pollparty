@@ -105,12 +105,13 @@ li .hover {
 
               /* Prep For Login/Signup Form */
 input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+	width: 95%;
+	border-radius: 5px;
+	padding: 10px;
+	margin-right: 10px;
+	margin-left: 10px;
+	font-family: Arial;
+	outline: none;
 }
 
               /* Login/Signup Form Background */
@@ -130,27 +131,94 @@ input[type=text], input[type=password] {
 
               /* Login/Signup Form Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background: white;
   margin: 5px auto 15px auto;
-  border: 1px solid #888;
-  width: 80%;
+  width: 50%;
+  border-radius: 5px;
 }
+.avatar { 
+	display: block;
+  margin-left: 50%;
+  margin-right: 50%;
+	height: 46px;
+	width: 46px;
+}
+.loginpagetext {
+	font-family: Arial;
+	margin: 5px;
+	padding: 5px;
+	color: #327D86;
+	font-weight: bold;
+	float: left;
+}
+#forgotlink {
+	margin: 5px;
+	margin-right: 10px;
+	padding: 5px;
+	padding-bottom: 10px;
+	float: right;
+}
+#rememberme{
+	font-family: Arial;
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: 90%;
+	padding: 10px;
+	color: #327D86;
+	font-weight: bold;
+}
+#loginbutton {
+	padding: 10px;
+	margin: 5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	background-color: #56D9E8;
+	border-radius: 5px;
+	border: 0px;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Arial;
+	cursor: pointer;
+	font-size: 100%;
+	color: white;
+}
+/*
+#cancelbutton {
+	float: left;
+	padding: 10px;
+	margin: 5px;
+	margin-left: 5px;
+	background-color: #56D9E8;
+	border-radius: 5px;
+	border: 0px;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: Arial;
+	cursor: pointer;
+	font-size: 100%;
+	color: white;
+}
+*/
 
               /* Login/Signup Form Close Button */
 .close {
-    position: absolute;
-    right: 25px;
-    top: 0;
-    color: #000;
-    font-size: 35px;
+    display: block;
+	float: right;
     font-weight: bold;
+	font-size: 130%;
+	font-family: Arial;
+	color: #0E2124;
+	margin: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
 }
 
               /* Login/Signup Form Background Close Hover */
 .close:hover,
 .close:focus {
-  color: red;
+  color: #56D9E8;
   cursor: pointer;
+  font-family: Arial;
 }
 
               /* Login/Signup Form Background Zoom Animation */
@@ -280,7 +348,6 @@ input[type=text], input[type=password] {
 	background-color: #56D9E8;
 	border-radius: 5px;
 	border: 0px;
-	color: #0E2124;
 	font-weight: bold;
 	text-decoration: none;
 	font-family: Arial;
