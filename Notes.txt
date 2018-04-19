@@ -1,48 +1,41 @@
-Top of the page is the menu. There is navigation, which includes Home, Hot, New, and following. On the right side is your username (click for account settings) along 
 Current Tasks:
--Make character count at the end of options.
--Automatically Resize the text area.
--Make the mobile navbar transition in from the top.
--Make the nav bar close and open with the click of the &equiv;
--add an x to remove an option &times;
--add center element that fades the background when you click log in/ sign up
+	Webpage: 
+		-Make character count at the end of options. /140 turns
+		-Automatically Resize the text area.
+		-add an x to remove an option &times;
+	Mobile:
+		-Make the mobile navbar transition in from the top.
+		-Make the nav bar close and open with the click of the &equiv; in mobile
+		-add sign in button on mobile
+	Login: 
+		-add center element that fades the background when you click log in/ sign up
+		-when you click anywhere besides the popup, close the popup
+		-add button for sign up, that closes that popup and ads new popup
+	Posts: 
+		-make username's different
+		-make time display time from post (ex. 1 min ago, 2 mins ago, 1 hour ago, 2 hours ago,)
+		-format poll options
+		-be able to click options text and it still tags the radio circle
+		-make like button ad to value
+		-we can rest with the comments for now
 
-with your poll points (+1 for every like)
 
-On the home page, you can post a new poll, or view all your polls. There is also an option for settings, and an option to view polls you have voted on
-
-The hot page will have the most liked, voted, and commented posts over the past 24 hours. Once a poll is over 24 hours old, it is no longer eligible in hot page.
-
-New will have chronological order of polls
-
-Followers will have chronological posts from users you followed.
-
-Ads will display every 10 polls.
-
-Sponcered polls can be a type of ad, for demographics
 
 Thing mentioned in group chat:
--we need to somehow code a whole admin shit otherwise we have to remove it directly from database
--on resize, put both id="form" and id="feed" in the center
 -once the java script and css is done, we should implement it in the index, because otherwise the website will call for 3 HTTP requests
 -https://www.w3schools.com/howto/howto_css_login_form.asp
 -https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav
 -https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_todo
 -How bout an analytics page where we show graphs of number of votes and polls and comments and shit
 -I was also thinking of a hidden page showing top posters and commenter And top voters
--I need you to make the nav bar not looked so fucked when zooming
 
 
-Things I want to include
+Future things
 - Daily poll (everybody votes on it, submitted by a user)
 - Search Bar
-- option to let users add options/disable
 - option to let users select multiple answers/disable
 - alerts (replies/ comments, update information, ect)
 - bracket type polls. Users post one of these with all the options and people vote on them. Voters will be alerted when the bracket is open again
-
-Things we may wanna change
--In mobile make the menu bar grow down and out of the button. So that you press the menu button to close the menu.
 
 Site colors
 #E9EBEE
