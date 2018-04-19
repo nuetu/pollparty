@@ -17,10 +17,12 @@ Current Tasks:
 		-format poll options
 		-be able to click options text and it still tags the radio circle
 		-make like button ad to value
-		-we can rest with the comments for now
 
-
-
+Future Tasks:
+		-Comments
+		-Who chose what option
+		-Multiple select
+		
 Thing mentioned in group chat:
 -once the java script and css is done, we should implement it in the index, because otherwise the website will call for 3 HTTP requests
 -https://www.w3schools.com/howto/howto_css_login_form.asp
@@ -30,7 +32,8 @@ Thing mentioned in group chat:
 -I was also thinking of a hidden page showing top posters and commenter And top voters
 
 
-Future things
+
+Future additions
 - Daily poll (everybody votes on it, submitted by a user)
 - Search Bar
 - option to let users select multiple answers/disable
