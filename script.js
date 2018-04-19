@@ -157,9 +157,9 @@ function addInfo() {
       qstn[i].innerHTML = question;
     }
     for(i=0;i<optionsArray.length;i++) {
-      $("#thing").append('<input id="option" type="radio" name="option" value="option">');
+      $("#thing").prepend('<li id="listItem"><input id="option" type="radio" name="option" value="option"></li>');
       console.log(optionsArray[i].value);
-      $("#thing").last().text(optionsArray[i].value);
+      $("#listItem").first().text(optionsArray[i].value);
 
 
     }
