@@ -158,7 +158,8 @@ function addInfo() {
     for(i=0;i<optionsArray.length;i++) {
       var temp = document.createElement("li");
       temp.style.id = "listItem";
-      temp.innerHTML = (optionsArray[i].value +'<input id="options" type="radio" name="option" value="option">');
+      temp.style.class = "button";
+      temp.innerHTML = ('<input id="options" type="button" name="option" value="' + optionsArray[i].value + '">');
       $("#thing").append(temp);
     }
 
