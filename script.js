@@ -140,7 +140,6 @@ function addInfo() {
   $(function() {
     var post = $("ul").find("#poll").first();
     optionsArray = $("ul#optionsList").find("li").find("#option").toArray();
-    //console.log(optionsArray);
 
     var uname = $("div").find("#username");
 
@@ -157,13 +156,11 @@ function addInfo() {
       qstn[i].innerHTML = question;
     }
     for(i=0;i<optionsArray.length;i++) {
-      $("#thing").prepend('<li id="listItem"><input id="option" type="radio" name="option" value="option"></li>');
-      console.log(optionsArray[i].value);
-      $("#listItem").first().text(optionsArray[i].value);
-
-
+      var temp = document.createElement("li");
+      temp.style.id = "listItem";
+      temp.innerHTML = (optionsArray[i].value +'<input id="options" type="radio" name="option" value="option">');
+      $("#thing").append(temp);
     }
-    //qstn.value = question;
 
   });
 
