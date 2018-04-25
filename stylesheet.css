@@ -260,16 +260,21 @@ input[type=text], input[type=password] {
   background-color: white;
   color: black;
   border-radius: 5px;
-  border: 2px solid #008CBA;
-}
+  border: 2px solid #56D9E8;
 }
 #options:hover {
 	list-style: none;
-  background-color: blue;
-  color: white;
+  background-color: #E9EBEE;
+  color: black;
   border-radius: 5px;
-  border: 2px solid #008CBA;
-
+  border: 2px solid #56D9E8;
+}
+#options:active {
+  list-style: none;
+  background-color: #56D9E8;
+  color: black;
+  border-radius: 5px;
+  border: 2px solid #56D9E8;
 }
 .options{
 	list-style-type: none;
