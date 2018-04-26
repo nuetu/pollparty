@@ -164,6 +164,7 @@ function addInfo() {
     for(i=0;i<qstn.length;i++){
       qstn[i].innerHTML = question;
     }
+    
     for(i=0;i<optionsArray.length;i++) {
       var temp = document.createElement("li");
       temp.style.id = "listItem";
@@ -173,3 +174,9 @@ function addInfo() {
     }
   });
 }
+
+/*$(function(){
+  $('.button').on('click', function(){
+    $(this).toggleClass('optionSelected')
+  });
+});*/
