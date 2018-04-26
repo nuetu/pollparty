@@ -1,5 +1,6 @@
 var username = "johndoe";
 var question = "Who is the better coder, Person1 or Person2?";
+
 /*Switches to the "Home" tab*/
 function openhome() {
   var w = document.getElementById('home');
@@ -20,6 +21,7 @@ function openhome() {
 	d.style.backgroundColor = "transparent";
 	document.getElementById("mobilenav").style.width = "0";
 }
+
 /*Switches to the "Hot" tab*/
 function openhot() {
 	var w = document.getElementById('home');
@@ -40,6 +42,7 @@ function openhot() {
 	d.style.backgroundColor = "transparent";
 	document.getElementById("mobilenav").style.width = "0";
 }
+
 /*Switches to the "New" tab*/
 function opennew() {
 	var w = document.getElementById('home');
@@ -60,6 +63,7 @@ function opennew() {
 	d.style.backgroundColor = "transparent";
 	document.getElementById("mobilenav").style.width = "0";
 }
+
 /*Switches to Turns on the "Following" tab*/
 function openfollowing() {
 	var w = document.getElementById('home');
@@ -80,18 +84,22 @@ function openfollowing() {
 	d.style.backgroundColor = "#56D9E8";
 	document.getElementById("mobilenav").style.width = "0";
 }
+
 /*Alerts the user that the a link is unreachable or unimplemented*/
 function linkunavailable() {
   alert("This link is unavailable");
 }
+
 /*Opens the navigation menu for mobile devices*/
 function openmobilenav() {
   document.getElementById("mobilenav").style.width = "100%";
 }
+
 /*Closes the navigation menu for movbile devices*/
 function closemobilenav() {
   document.getElementById("mobilenav").style.width = "0";
 }
+
 /*Adds an an option to the poll creator*/
 function addOption() {
 	var num = document.getElementById("optionsList").getElementsByTagName("li").length;
@@ -101,6 +109,7 @@ function addOption() {
 		$("#optionsList").append('<li><input type="text" name="Option" id="option" maxlength="140" placeholder="Option"></li>');
 	});
 }
+
 /*"Submits" a poll, currently it just pastes a copy of a defualt poll to the feed. Nothing is being sent anywhere.*/
 function submitPoll() {
 	var feed = document.getElementById("feed");
@@ -120,6 +129,7 @@ function submitPoll() {
     $(".poll").css('background-color','rgb(255,255,255)');
   });
 }
+
 /*Opens the Poll creator window for mobile devices*/
 function newMobilePoll() {
   $(function() {
@@ -146,7 +156,6 @@ function addInfo() {
     var qstn = post.first().find("#userquestion");
     question = $("textarea#question").val();
 
-
     var i;
     for(i=0;i<uname.length;i++){
       uname[i].value = username;
@@ -162,7 +171,5 @@ function addInfo() {
       temp.innerHTML = ('<input id="options" type="button" name="option" value="' + optionsArray[i].value + '">');
       $("#thing").append(temp);
     }
-
   });
-
 }
